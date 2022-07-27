@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+<head>
+
+<body>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Librarian Page</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a class="active" href="./librarianpage.html"> Librarian Page </a></li>
+            <!-- <li class="tab"><a href="./studentpage.html">Student Page</a></li> -->
+            <li class="tab"><a href="./AdminInfo.html">Admin Personal Information</a></li>
+            <li class="tab"><a href="./StudentInfo.html">Student Personal Information</a></li>
+            <li class="tab"><a href="./index.html">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div>
+        <h3>User Profile</h3>
+        <table border= "1" >
+          <tr>
+            <th>Admin ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+          </tr>
+          <tr>
+            <td>a123</td>
+            <td>Zayn Lin</td>
+            <td>Male</td>
+          </tr>
+        </table>
+      </div>
+
+<br> <br> <br> 
+<br> <br> <br> 
+ <div>
+        <h3>Search for book record</h3>
+        <blockquote>
+            Input the book's name or book id: 
+        </blockquote>
+        <textarea rows="5" cols="30"> Example: Jane Eyre or 046437 </textarea>
+        <!-- <button class="btn waves-effect waves-light" type="submit" name="action">RENEW
+        </button> -->
+        <button class="btn waves-effect waves-light" type="submit" name="action">SEARCH
+        </button>
+      </div>
+
+        <!-- </div> -->
+<div>
+        <div class="row">
+            <!-- <div class="col s12"></div>
+            <div class="col s12 m4 l2"><p></p></div> -->
+            <h6>THE RESULT IS:</h6>
+              <table border= "1" >
+                <tr>
+                  <th>Book ID</th>
+                  <th>Book Name</th>
+                  <th>Author</th>
+                  <th>Publisher</th>
+                  <th>Price</th>
+                  <th>Class</th>
+                  <th>Borrowed Times</th>
+                  <th>Operations</th>
+                </tr>
+                <!-- <tr>
+                  <td>076435</td>
+                  <td>War And Peace</td>
+                  <td>Leo Tolstoy</td>
+                  <td>Penguin Classics</td>
+                  <td>30.00</td>
+                  <td>Novel</td>
+                  <td>Borrowed</td>
+                </tr>       -->
+                <tr>
+                  <td>046437</td>
+                  <td>Jane Eyre</td>
+                  <td>Charlotte Brontë</td>
+                  <td>Hachette Book Group</td>
+                  <td>27.00</td>
+                  <td>Novel</td>
+                  <td>10</td>
+                  <td><button class="btn waves-effect waves-light" type="submit" name="action"> Delete
+                  </button></td>
+                </tr> 
+                </table>
+            </div>
+<div>
+        <h3>Change the book record</h3>
+        <table border= "1" >
+                <tr>
+                  <th>Book ID</th>
+                  <th>Book Name</th>
+                  <th>Author</th>
+                  <th>Publisher</th>
+                  <th>Price</th>
+                  <th>Class</th>
+                  <th>Borrowed Times</th>
+                  <th>Operations</th>
+                </tr>
+                <tr>
+                  <td><input type= "text" value ="" ></td>
+                  <td><input type= "text" value ="" ></td>
+                  <td><input type= "text" value ="" ></td>
+                  <td><input type= "text" value ="" ></td>
+                  <td><input type= "text" value ="" ></td>
+                  <td><input type= "text" value ="" ></td>
+                  <td><input type= "text" value ="" ></td>
+                  <td><button class="btn waves-effect waves-light" type="submit" name="action"> Add
+                  </button></td>
+                  <td><button class="btn waves-effect waves-light" type="submit" name="action"> Update
+                  </button></td>
+                </tr>
+
+
+
+        </table>
+      </div>
+            <!-- <div class="col s12 m4 l2"><p></p></div> -->
+<br> <br> <br> 
+<br> <br> <br> 
+     
+
+      <div>
+        <h3>Borrowing Record</h3>
+        <table border= "1" >
+          <tr>
+            <th>Book ID</th>
+            <th>Book Name</th>
+            <th>Lending Time</th>
+            <th>Date to Return</th>
+            <th>Renew</th>
+            <th>Return</th>
+            <th>Operations</th>
+          </tr>
+          <tr>
+            <td>076435</td>
+            <td>War And Peace</td>
+            <td>02/03/2022</td>
+            <td>04/03/2022</td>
+            <td>No</td>
+            <td>No</td>
+            <td><button class="btn waves-effect waves-light" type="submit" name="action">Return
+            </button></td>
+            <td><button class="btn waves-effect waves-light" type="submit" name="action">Renew
+            </button></td>
+             <td><button class="btn waves-effect waves-light" type="submit" name="action">Delete
+            </button></td>
+          </tr>  
+        </table>
+      </div>
+      </div>
+
+</body>
+
+</html>
